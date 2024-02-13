@@ -1,6 +1,25 @@
 <div class="prefs-container">
     <div class="prefs-inner-container">
-        <input type="text" placeholder="Enter Preferences">
+
+        <mat-form-field class="example-chip-list">
+            <mat-label>Enter Preferenecssss </mat-label>
+            <mat-chip-grid #chipGrid aria-label="Enter preferences">
+                @for (preference of preferences; track preference) {
+                <mat-chip-row (removed)="remove(preference)" [editable]="true" (edited)="edit(preference, $event)"
+                    [aria-description]="'press enter to edit ' + preference.text">
+                    {{preference.text}}
+                    <button matChipRemove [attr.aria-label]="'remove ' + preference.text">
+                        <mat-icon>cancel</mat-icon>
+                    </button>
+                </mat-chip-row>
+                }
+                <input placeholder="New fruit..." [matChipInputFor]="chipGrid"
+                    [matChipInputSeparatorKeyCodes]="separatorKeysCodes" [matChipInputAddOnBlur]="addOnBlur"
+                    (matChipInputTokenEnd)="add($event)" />
+            </mat-chip-grid>
+        </mat-form-field>
+
+
         <input type="button" value="SEARCH">
     </div>
 </div>

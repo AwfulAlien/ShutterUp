@@ -21,7 +21,7 @@ export class PrefsComponent {
 
   addOnBlur = true;
   readonly separatorKeysCodes = [ENTER, COMMA] as const;
-  preferences: Preference[] = [{text: 'Lemon'}, {text: 'Lime'}, {text: 'Apple'}];
+  preferences: Preference[] = [];
 
   announcer = inject(LiveAnnouncer);
 

@@ -25,6 +25,12 @@ export class PrefsComponent {
 
   announcer = inject(LiveAnnouncer);
 
+
+  clickMe() {
+    this.preferences.forEach(preference => console.log(preference)); 
+    
+  }
+
   add(event: MatChipInputEvent): void {
     const value = (event.value || '').trim();
 

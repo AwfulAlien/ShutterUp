@@ -1,5 +1,6 @@
 <div class="prefs-container">
     <div class="prefs-inner-container">
+        
 
         <mat-form-field class="example-chip-list">
             <mat-label>Enter Preferences </mat-label>
@@ -20,6 +21,7 @@
         </mat-form-field>
 
 
-        <input type="button" value="SEARCH">
+        <input (click)="clickMe()" type="button" value="SEARCH" routerLink="chat" >
+        
     </div>
 </div>

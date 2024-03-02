@@ -22,11 +22,8 @@ input {
     border-radius: 4px;
 }
 
-input[type="text"] {
-    height: 40px;
-    width: 100%;
-    margin-bottom: 30px;
-    padding: 10px;
+.prefs-input {
+    border: 2px solid purple;
 }
 
 input[type="button"] {

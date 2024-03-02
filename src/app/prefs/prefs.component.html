@@ -13,7 +13,7 @@
                     </button>
                 </mat-chip-row>
                 }
-                <input placeholder="New preference..." [matChipInputFor]="chipGrid"
+                <input class="prefs-input" placeholder="New preference..." [matChipInputFor]="chipGrid"
                     [matChipInputSeparatorKeyCodes]="separatorKeysCodes" [matChipInputAddOnBlur]="addOnBlur"
                     (matChipInputTokenEnd)="add($event)" />
             </mat-chip-grid>

@@ -1,20 +1,20 @@
 .example-chip-list {
     width: 100%;
-}
-
+  }
+  
 .prefs-container {
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;  
 }
 
-.prefs-inner-container {
-    display: flex;
+ .prefs-inner-container {
+     width: 80vw; 
+     display: flex;
     flex-direction: column;
-    width: 60vw;
-    align-items: center;
+    align-items: center; 
 }
 
 input {
@@ -22,8 +22,11 @@ input {
     border-radius: 4px;
 }
 
-.prefs-input {
-    border: 2px solid purple;
+input[type="text"] {
+    height: 40px;
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 10px;
 }
 
 input[type="button"] {
